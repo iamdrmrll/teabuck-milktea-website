@@ -1,0 +1,266 @@
+@font-face {
+font-family: 'SF UI Display Bold';
+font-style: normal;
+font-weight: bold;
+src: local('SF UI Display Bold'), url('sf-ui-display-bold.woff') format('woff');
+}
+@font-face {
+font-family: 'SF UI Display Medium';
+font-style: normal;
+font-weight: bold;
+src: local('SF UI Display Medium'), url('sf-ui-display-medium.woff') format('woff');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family:SF UI Display Medium;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url(image/background1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#image-container{
+    border: 3px solid black;
+    width: 300px;
+    height: 450px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px 10px;
+    box-shadow: 3px 3px #000;
+}
+#section{
+    min-height: 100%;
+}
+#image-content{
+    width: 200px;
+    height: 200px;
+    margin: 30px 50px;
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.75s;
+}
+#image-container:hover #image-content{
+    transform: scale(1.1);
+}
+#nav-container{
+	width:100%;
+	height:34px;
+	text-align:center;
+	background-color:black;
+    padding: 7px 5px;
+    position: fixed;
+    z-index: 1;
+}
+#nav-container #nav{
+	text-decoration:none;
+	color:white;
+    padding: 7px 15px;
+}
+#nav-container #nav:hover{
+    color:black;
+    background-color: white;
+    padding: 7px 15px;
+}
+#nav-container #nav1{
+    text-decoration: none;
+    color: white;
+    padding: 7px 15px;
+    background-color: #0BBB2E;
+}
+#nav-container #nav1:hover{
+    color: white;
+    background-color: #0BBB2E;
+    padding: 7px 15px;
+}
+#section #name{
+    font-size: 70px;
+    font-family: SF UI Display Bold;
+    color: white;
+    text-shadow: 3px 3px #000;
+}
+#section #size-container th{
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+#rTable tr{
+    text-align: center;
+}
+#rTable th, td{
+    padding: 0px 5px;
+}
+#qnty{
+    border-radius: 5px 5px 5px 5px;
+    border: 0.5px solid black;
+    text-align: center;
+    padding: 5px 5px;
+}
+#btn-order{
+    padding: 5px 5px;
+    margin-left: 148px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0px solid black;
+    margin-top: 5px;
+    background-color: #0BBB2E;
+    color: white;
+}
+#footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+#footer1{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    margin-top: 30px;
+}
+#footer2{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
+}
+#divisor{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+}
+#footer-content{
+    padding-top: 25px;
+}
+#footer-table{
+    margin-left: 35px;
+}
+#fTh, #fTd{
+    padding: 3px 40px;
+}
+#fIcons{
+    padding: 10px;
+}
+#fb{
+    display: inline-block;
+    background: transparent url("image/fb.png") no-repeat 0 0;
+    width: 35px;
+    height: 35px;
+}
+#fb:hover{
+    background-image: url("image/fb1.png");
+}
+#ig{
+    display: inline-block;
+    background: transparent url("image/ig.png") no-repeat 0 0;
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+#ig:hover{
+    background-image: url("image/ig1.png");
+}
+#fTextBot{
+    font-size:13px;
+    padding: 10px;
+}
+#tOrder {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tOrder td, #tOrder th {
+    border: 1px solid #ddd;
+    padding: 8px 50px;
+}
+#tOrder tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#tOrder tr:nth-child(odd){
+    background-color: white;
+}
+#tOrder tr:hover {
+    background-color: #ddd;
+}
+#tOrder th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: black;
+    color: white;
+}
+#login-container{
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    box-shadow: 2px 2px black;
+}
+#logo-login{
+    z-index: 1;
+    height: 120px;
+    widows: 120px;
+    margin-top: -120px;
+}
+#login-name{
+    font-size:50px;
+    font-family: SF UI Display Bold;
+}
+#login-input{
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#login-button{
+    padding: 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0px solid black;
+    background-color: #0BBB2E;
+    color: white;
+    margin-left: 200px;
+    font-size:15px;
+}
+#login-error{
+    color: red;
+    font-size: 15px;
+}
+#tOrder a{
+    text-decoration: none;
+}
+#index-logo{
+    height: 250px;
+    width: 250px;
+	margin-top: 15%;
+}
+#section #name-index{
+    font-size: 50px;
+    font-family: SF UI Display Bold;
+    color: white;
+}
+#section #name-container{
+	background: black;
+	height:650px;
+}
+#index-pic{
+	margin: 15px 75px;
+	color: white;
+}
+#pic-container{
+    display: inline-flex;
+}
+#a-index{
+	text-decoration: none;
+}

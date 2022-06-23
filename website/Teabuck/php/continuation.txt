@@ -1,0 +1,69 @@
+
+                
+                <?php
+                    $b=0;
+                    while($row1=mysqli_fetch_array($result)){
+                        if($b%2==0)
+                            $class1="even";
+                        else
+                            $classname1="odd";
+                ?>
+                <tr class="<?php if(isset($classmate1)) echo $classmate1;?>">
+                    <td><?php echo $row1["name1"];?></td>
+                    <td><?php echo $row1["qnty1"];?></td>
+                </tr>
+                <?php
+                     $b++;
+                    }
+                ?>
+                
+                <?php
+                    $c=0;
+                    while($row2=mysqli_fetch_array($result)){
+                        if($c%2==0)
+                            $class2="even";
+                        else
+                            $classname2="odd";
+                ?>
+                <tr class="<?php if(isset($classmate2)) echo $classmate2;?>">
+                    <td><?php echo $row2["name2"];?></td>
+                    <td><?php echo $row2["qnty2"];?></td>
+                </tr>
+                <?php
+                     $c++;
+                    }
+                ?>
+                
+                <?php
+                    $d=0;
+                    while($row3=mysqli_fetch_array($result)){
+                        if($d%2==0)
+                            $class3="even";
+                        else
+                            $classname3="odd";
+                ?>
+                <tr class="<?php if(isset($classmate3)) echo $classmate3;?>">
+                    <td><?php echo $row3["name3"];?></td>
+                    <td><?php echo $row3["qnty3"];?></td>
+                </tr>
+                <?php
+                     $d++;
+                    }
+                ?>
+                
+                <?php
+                    $e=0;
+                    while($row4=mysqli_fetch_array($result)){
+                        if($e%2==0)
+                            $class4="even";
+                        else
+                            $classname4="odd";
+                ?>
+                <tr class="<?php if(isset($classmate4)) echo $classmate4;?>">
+                    <td><?php echo $row4["name4"];?></td>
+                    <td><?php echo $row4["qnty4"];?></td>
+                </tr>
+                <?php
+                     $e++;
+                    }
+                ?>
